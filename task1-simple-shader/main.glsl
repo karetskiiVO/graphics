@@ -5,7 +5,7 @@
 const vec3 eye   = vec3(0, 0, 5);
 const vec3 light = vec3(0, 2, 5);
 
-void mainImage(out vec4 fragColor, in vec2 fragCoord) {
+void mainImage(out vec4 fragColor, in vec2 fragCoord) {  
     vec3 mouse = vec3(iMouse.xy/iResolution.xy - 0.5, iMouse.z - 0.5);
     mat3 transform = 
         rotateX(6.0 * mouse.y) * 
